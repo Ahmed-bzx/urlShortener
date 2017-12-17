@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/new/:url(*)', (req, res, next) => {
   let url = req.params.url;
-  let host = req.hostname + '/';
+  let host = 'https://urlshortener-ahmed-bzx.herokuapp.com/';
 
   // Check URL validation
   if (validUrl.isUri(url)) {
